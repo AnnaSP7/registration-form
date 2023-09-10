@@ -1,0 +1,20 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" id="icon-list">
+    <g fill="none">
+      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"></circle>
+      <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="icon-success">
+    <defs>
+      <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+        <stop offset="0%" stop-color="#FF6A3A"></stop>
+        <stop offset="100%" stop-color="#FF527B"></stop>
+      </linearGradient>
+    </defs>
+    <g fill="none">
+      <circle cx="32" cy="32" r="32" fill="url(#a)"></circle>
+      <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"></path>
+    </g>
+  </symbol>
+</svg>

@@ -1,0 +1,65 @@
+body {
+  background-color: #233143;
+}
+
+.registration-form {
+  display: flex;
+  justify-content: center;
+}
+
+.registration-form__icon {
+  width: 900px;
+  height: 600px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.registration-form__icon-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 400px;
+}
+
+img {
+  height: 550px;
+}
+
+h1 {
+  font-size: 57px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+p {
+  font-family: sans-serif;
+  line-height: 24px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+li {
+  display: flex;
+  gap: 15px;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 10px;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */
