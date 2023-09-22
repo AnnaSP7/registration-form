@@ -8,47 +8,52 @@
     <title>Registration-form</title>
 </head>
 <body>
-    <main class="registration-form">
-        <div class="registration-form__icon">
+    <main>
+        <div class="registration-form">
+    
+                <div class="registration-form__content">
+                    <h1>Stay updated!</h1>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+    
+                    <ul>
+                        <li>
+                            <svg class="icon">
+                                <use xlink:href="assets/icons/sprite.svg#icon-list"></use>
+                            </svg>
+                            <p>Product discovery and building what matters</p>
+                        </li>
+    
+                        <li>
+                            <svg class="icon">
+                                <use xlink:href="assets/icons/sprite.svg#icon-list"></use>
+                            </svg>
+                            <p>Measuring to ensure updates are a success</p>
+                        </li>
+    
+                        <li>
+                            <svg class="icon">
+                                <use xlink:href="assets/icons/sprite.svg#icon-list"></use>
+                            </svg>
+                            <p>And much more!</p>
+                        </li>
+                    </ul>
+    
+                    <form action='/action_page.html' method="post">
+                        <label for="mail">
+                            Email address
+                            <span class="valid">Valid email required</span>
+                            <input class="email" type="email" name="email" placeholder="email@company.com">
+                        </label>
+    
+                        <input class="submit" type="submit" value="Subscribe to monthly newsletter">
+                    </form>
+                </div>
+    
+                <picture class="images">
+                    <source srcset="assets/images/illustration-sign-up-mobile.svg" media="(max-width: 480px)">
+                    <img src="assets/images/illustration-sign-up-desktop.svg" alt="picture">
+                </picture>
 
-            <div class="registration-form__icon-text">
-                <h1>Stay updated!</h1>
-                <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-                <ul>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="assets/icons/sprite.svg#icon-list"></use>
-                        </svg>
-                        <p>Product discovery and building what matters</p>
-                    </li>
-
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="assets/icons/sprite.svg#icon-list"></use>
-                        </svg>
-                        <p>Measuring to ensure updates are a success</p>
-                    </li>
-
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="assets/icons/sprite.svg#icon-list"></use>
-                        </svg>
-                        <p>And much more!</p>
-                    </li>
-                </ul>
-
-
-                <form action='/action_page.html' method="post">
-                    <p>Email address</p>
-                    <input class="email" type="email" name="email">
-                    <input type="submit" value="Subscribe to monthly newsletter">
-                </form>
-            </div>
-
-            <div>
-                <img src="assets/images/illustration-sign-up-desktop.svg" alt="picture">
-            </div>
         </div>
     </main>
     

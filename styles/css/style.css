@@ -1,38 +1,70 @@
+@import url("../../assets/fonts/Roboto/Roboto.css");
 body {
-  background-color: #233143;
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: white;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
 }
 
 .registration-form {
-  display: flex;
-  justify-content: center;
-}
-
-.registration-form__icon {
-  width: 900px;
-  height: 600px;
+  width: 920px;
+  height: 640px;
   background-color: white;
   border-radius: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
+  margin-top: 150px;
 }
-
-.registration-form__icon-text {
+.registration-form__content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 400px;
+  width: 375px;
+  padding: 90px 60px;
+}
+@media screen and (max-width: 480px) {
+  .registration-form__content {
+    width: 325px;
+    margin: auto;
+    padding: 400px 0 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .registration-form {
+    display: block;
+    height: 100%;
+    margin-top: 0;
+    position: relative;
+  }
 }
 
-img {
-  height: 550px;
+@media screen and (max-width: 480px) {
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
 h1 {
-  font-size: 57px;
-  font-family: sans-serif;
-  font-weight: 600;
+  font-size: 53px;
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 45px;
+  }
 }
 
 .icon {
@@ -41,14 +73,13 @@ h1 {
 }
 
 p {
-  font-family: sans-serif;
   line-height: 24px;
 }
 
 ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 li {
@@ -57,9 +88,113 @@ li {
 }
 
 input {
-  width: 400px;
+  width: 375px;
   height: 50px;
-  border: 1px solid rgb(173, 173, 173);
+  border: 1px solid hsl(231, 7%, 60%);
   border-radius: 10px;
   padding: 0;
+}
+@media screen and (max-width: 480px) {
+  input {
+    width: 325px;
+    height: 55px;
+  }
+}
+
+.email {
+  margin: 8px 0 20px;
+  padding-left: 20px;
+  width: 353px;
+  height: 48px;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .email {
+    width: 303px;
+    height: 53px;
+  }
+}
+
+.email:focus {
+  border: 1px solid black;
+}
+
+.submit {
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+}
+
+.submit:hover {
+  background: linear-gradient(to right, rgb(243, 67, 90), rgb(255, 114, 58));
+  border: 1px solid transparent;
+  box-shadow: 3px 3px 20px -2px rgb(255, 114, 58);
+}
+
+label {
+  font-size: 12px;
+  font-family: "Roboto-Bold";
+}
+
+.valid {
+  color: hsl(4, 100%, 67%);
+  padding-left: 180px;
+  display: none;
+}
+
+.email:invalid {
+  border: 1px solid hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 95%);
+  color: hsl(4, 100%, 67%);
+}
+
+.email:invalid ~ .valid {
+  display: inline-block;
+}
+
+.agree-block {
+  width: 500px;
+  height: 520px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 480px) {
+  .agree-block {
+    width: auto;
+    height: auto;
+  }
+}
+
+.agree-content {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 480px) {
+  .agree-content {
+    width: auto;
+  }
+}
+
+span {
+  font-family: "Roboto-Bold";
+}
+
+.done {
+  height: 60px;
+  width: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .submit--agree {
+    margin-top: 250px;
+    width: 325px;
+    height: 55px;
+  }
 }/*# sourceMappingURL=style.css.map */
