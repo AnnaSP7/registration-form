@@ -61,7 +61,7 @@ h1 {
     }
 }
 
-.icon {
+.icon-small {
     width: 20px;
     height: 20px;
 }
@@ -139,8 +139,8 @@ label {
     color: hsl(4, 100%, 67%);
 }
 
-.email:invalid ~.valid {
-    display: inline-block;
+.email:invalid .valid {
+    display: block;
 }
 
 
@@ -177,7 +177,7 @@ span {
     font-family: "Roboto-Bold";
 }
 
-.done {
+.icon-average {
     height: 60px;
     width: 60px;
 }
