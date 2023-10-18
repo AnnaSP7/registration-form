@@ -38,11 +38,11 @@
                         </li>
                     </ul>
     
-                    <form action='agree.html' method="post">
-                        <label for="mail">Email address</label>
-                        <span class="valid">Valid email required</span>
-                        <input class="email" type="email" name="email" placeholder="email@company.com">
-                        <input class="submit" type="submit" value="Subscribe to monthly newsletter">
+                    <form class="form">
+                        <label class="label" for="mail">Email address</label>
+                        <span class="error"></span>
+                        <input class="email" type="email" name="email" required placeholder="email@company.com" onkeyup="validateEmail()">
+                        <button class="submit" type="button">Subscribe to monthly newsletter</button>
                     </form>
                 </div>
     
@@ -53,7 +53,20 @@
 
         </div>
     </main>
-    <script src="scripts/script.js"></script>
-    
+    <script>
+        let label = document.querySelector('.label')
+        let error = document.querySelector('.error')
+        let email = document.querySelector('.email')
+
+        function validateEmail(){
+            if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                error.innerHTML = "Valid email required";
+                return false;
+            }
+            error.innerHTML = "";
+            return true
+        }
+
+    </script>
 </body>
 </html>
