@@ -41,8 +41,8 @@
                     <form class="form">
                         <label class="label" for="mail">Email address</label>
                         <span class="error"></span>
-                        <input class="email" type="email" name="email" placeholder="email@company.com" onkeyup="validateEmail()">
-                        <button class="submit" type="button" onclick="newDoc()">Subscribe to monthly newsletter</button>
+                        <input class="email" type="email" name="email" placeholder="email@company.com">
+                        <button class="submit" type="button">Subscribe to monthly newsletter</button>
                     </form>
                 </div>
     
@@ -53,25 +53,6 @@
 
         </div>
     </main>
-    <script>
-        let label = document.querySelector('.label')
-        let error = document.querySelector('.error')
-        let email = document.querySelector('.email')
-        let button = document.querySelector('submit')
-
-        function validateEmail(){
-            if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-                error.innerHTML = "Valid email required";
-                return false;
-            }
-            error.innerHTML = "";
-            return true
-        }
-
-        function newDoc() {
-        window.location.assign("http://127.0.0.1:5500/agree.html")
-}
-
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
